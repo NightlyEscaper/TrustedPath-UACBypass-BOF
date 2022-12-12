@@ -1,0 +1,32 @@
+{
+    "name": "UACBypass-TrustedPath",
+    "version": "0.0.1",
+    "command_name": "uacbypass-trustedpath",
+    "extension_author": "netero1010",
+    "original_author": "netero1010",
+    "repo_url": "https://github.com/NightlyEscaper/TrustedPath-UACBypass-BOF",
+    "help": "Trusted path UAC bypass.",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "trustedpath-uacbypass.x64.o"
+        }
+    ],
+    "arguments": [
+        {
+            "name": "process",
+            "desc": "Created Process Name",
+            "type": "wstring",
+            "optional": false
+        },
+        {
+            "name": "dllname",
+            "desc": "Drop your dll to C:\\\\Windows\\Tasks first",
+            "type": "wstring",
+            "optional": false
+        }
+    ]
+}
